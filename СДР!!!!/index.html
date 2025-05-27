@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Поздравление с Днём Рождения Никите от Дианы 💌">
+  <title>С Днём Рождения, Никита!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #FFFFF0, #F4EBD0);
+      color: #5E5E5E;
+      overflow-x: hidden;
+    }
+
+    .intro {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      background-color: #FFF8E7;
+      transition: opacity 1s ease;
+    }
+
+    .intro h1 {
+      font-size: 2.5em;
+      color: #C41E3A;
+      margin-bottom: 20px;
+    }
+
+    .start-button {
+      background-color: #3E8EDE;
+      border: none;
+      padding: 14px 30px;
+      color: white;
+      font-size: 1.1em;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .start-button:hover {
+      background-color: #2d5d9f;
+    }
+
+    .card {
+      max-width: 750px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      padding: 30px;
+      display: none;
+      animation: fadeIn 2s ease-in;
+    }
+
+    h2 {
+      color: #C41E3A;
+      font-size: 2.3em;
+      text-align: center;
+    }
+
+    .heart {
+      animation: floatPulseSmall 2s ease-in-out infinite;
+      display: block;
+      margin: 10px auto 30px;
+      font-size: 3em;
+      color: #C41E3A;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1em;
+      opacity: 0;
+      animation: appear 1s ease forwards;
+    }
+
+    p:nth-of-type(1) { animation-delay: 0.5s; }
+    p:nth-of-type(2) { animation-delay: 1.2s; }
+    p:nth-of-type(3) { animation-delay: 2s; }
+    p:nth-of-type(4) { animation-delay: 2.8s; }
+    p:nth-of-type(5) { animation-delay: 3.6s; }
+    p:nth-of-type(6) { animation-delay: 4.4s; }
+    p:nth-of-type(7) { animation-delay: 5.2s; }
+
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #A9A9A9;
+    }
+
+    .button {
+      background-color: #3E8EDE;
+      border: none;
+      padding: 12px 24px;
+      color: white;
+      border-radius: 12px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      display: block;
+      margin: 20px auto 0;
+    }
+
+    .button:hover {
+      background-color: #306eb8;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100px;
+      height: 100px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      transform: rotate(var(--rotate));
+    }
+
+.gallery img:nth-child(1) { --rotate: -8deg; }
+.gallery img:nth-child(2) { --rotate: 5deg; }
+.gallery img:nth-child(3) { --rotate: -5deg; }
+.gallery img:nth-child(4) { --rotate: 8deg; }
+.gallery img:nth-child(5) { --rotate: -6deg; }
+.gallery img:nth-child(6) { --rotate: 5deg; }
+
+
+    .gallery img:hover {
+      transform: scale(1.1) rotate(0deg);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes floatPulseSmall {
+      0% { transform: scale(1) translateY(0); }
+      50% { transform: scale(1.2) translateY(-4px); }
+      100% { transform: scale(1) translateY(0); }
+    }
+
+    @keyframes appear {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="intro" id="intro">
+    <h1>💌 У тебя новое поздравление!</h1>
+    <button class="start-button" onclick="startCard()">Открыть открытку</button>
+  </div>
+
+  <div class="card" id="card">
+    <h2>С Днём Рождения, Никита!</h2>
+    <div class="heart">❤️</div>
+    
+    <p>Мой дорогой Никита Михайлов Евгеньевич, ты — одно из самых ярких событий в моей жизни. Ты стал не просто любимым человеком — ты стал моим домом, моим спокойствием, моей радостью.</p>
+    <p>Ты заботливый, умный, внимательный и невероятно добрый. Я обожаю твой голос, твою улыбку, твой взгляд. То, как ты поддерживаешь меня — это волшебно. Даже когда я не понимаю себя, ты просто рядом. И этого достаточно.</p>
+    <p>Я знаю, ты стремишься стать отличным системным администратором — и я верю в тебя всем сердцем. У тебя есть всё, чтобы достичь этой цели: талант, упорство, и огромное желание расти.</p>
+    <p>Я часто представляю, как однажды мы будем жить вместе. Уют, спокойствие, любимые игры и подкасты на фоне, теплота в каждом моменте. Вечера вдвоём, смех и бесконечные разговоры ни о чём и обо всём.</p>
+    <p>Ты особенный. В тебе есть свет, который невозможно не заметить. Даже если вдруг тебе бывает тяжело — помни, я рядом. Всегда, без условий.</p>
+    <p>Ты мой родной, мой любимый масик, моя гордость. С тобой я хочу идти по жизни. Я люблю тебя всем сердцем и всегда буду рядом.</p>
+    <p style="text-align: right; font-style: italic; color: #7BA05B;">Всегда твоя, Диана 💚</p>
+
+    <button class="button" onclick="alert('Ты точно самый лучший 🎉')">Нажми, если ты знаешь, что ты супер</button>
+
+    <div class="gallery">
+      <img src="photo_2024-12-09_14-02-55.jpg" alt="Объятия">
+      <img src="photo_2024-12-26_10-00-12.jpg" alt="Объятия">
+
+      <img src="photo_2025-02-10_11-39-51.jpg" alt="Мы вместе">
+      <img src="photo_2025-04-17_20-02-56.jpg" alt="Счастливые моменты">
+      <img src="photo_2025-05-13_17-11-56.jpg" alt="Объятия">
+
+      <img src="photo_2024-11-27_23-26-30.jpg" alt="Объятия">
+    </div>
+
+    <div class="footer">28 мая 2025 • Алматы • Для самого дорогого 💘</div>
+  </div>
+
+  <script>
+    function startCard() {
+      const intro = document.getElementById('intro');
+      const card = document.getElementById('card');
+      intro.style.opacity = '0';
+      setTimeout(() => {
+        intro.style.display = 'none';
+        card.style.display = 'block';
+        card.scrollIntoView({ behavior: 'smooth' });
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
